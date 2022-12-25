@@ -1,0 +1,69 @@
+{
+  "name": "root",
+  "private": true,
+  "homepage": "https://github.com/TazDeCoder/jsminigames#readme",
+  "bugs": {
+    "url": "https://github.com/TazDeCoder/jsminigames/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TazDeCoder/jsminigames.git"
+  },
+  "license": "ISC",
+  "author": "Tarwat Uddin",
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "build": "lerna run build --parallel",
+    "commit": "cz",
+    "dev": "lerna run dev --parallel",
+    "dev:client": "lerna run dev --scope client",
+    "dev:server": "lerna run dev --scope server",
+    "postinstall": "husky install",
+    "release": "lerna version",
+    "start": "lerna run start --parallel",
+    "start:client": "lerna run start --scope client",
+    "start:server": "lerna run start --scope server",
+    "test": "lerna run test --parallel"
+  },
+  "commitlint": {
+    "extends": [
+      "@commitlint/config-conventional"
+    ]
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/@ryansonshine/cz-conventional-changelog"
+    }
+  },
+  "prettier": {
+    "singleQuote": true,
+    "trailingComma": "all"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^17.3.0",
+    "@commitlint/config-conventional": "^17.3.0",
+    "@ryansonshine/commitizen": "^4.2.8",
+    "@ryansonshine/cz-conventional-changelog": "^3.3.4",
+    "@typescript-eslint/eslint-plugin": "^5.47.0",
+    "@typescript-eslint/parser": "^5.47.0",
+    "eslint": "^8.30.0",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-config-airbnb-typescript": "^17.0.0",
+    "eslint-config-next": "^13.1.1",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-jsx-a11y": "^6.6.1",
+    "eslint-plugin-react": "^7.31.11",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-unused-imports": "^2.0.0",
+    "husky": "^8.0.2",
+    "lerna": "^6.1.0",
+    "lint-staged": "^13.1.0",
+    "nx": "^15.4.1",
+    "prettier": "^2.8.1",
+    "typescript": "^4.9.4"
+  },
+  "packageManager": "yarn@3.3.0"
+}
