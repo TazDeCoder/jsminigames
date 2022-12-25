@@ -1,0 +1,28 @@
+{
+  "name": "server",
+  "version": "0.0.0",
+  "private": true,
+  "description": "Server of JSMG",
+  "license": "ISC",
+  "author": "Tarwat Uddin",
+  "scripts": {
+    "debug": "DEBUG=server:* yarn start",
+    "dev": "nodemon ./bin/www",
+    "start": "node ./bin/www"
+  },
+  "dependencies": {
+    "consola": "^2.15.3",
+    "cors": "^2.8.5",
+    "debug": "~4.3.4",
+    "dotenv": "^16.0.3",
+    "express": "~4.18.2",
+    "jsdom": "^20.0.3",
+    "mongoose": "^6.8.1",
+    "morgan": "~1.10.0",
+    "socket.io": "^4.5.4",
+    "vm2": "^3.9.13"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  }
+}
